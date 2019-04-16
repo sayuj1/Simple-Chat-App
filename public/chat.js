@@ -1,5 +1,6 @@
 // Make Connection
-const socket = io.connect("http://localhost:4000/");
+//const socket = io.connect("http://localhost:4000/");
+const socket = io.connect("https://simple-chat-app-socket.herokuapp.com/");
 
 
 //Query DOM

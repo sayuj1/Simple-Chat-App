@@ -3,9 +3,11 @@ const express = require('express');
 const app = express();
 const socket = require('socket.io');
 
-const server = app.listen(4000, function(){
+/*const server = app.listen(4000, function(){
     console.log("Server started at port 4000");
-});
+});*/
+
+app.listen(process.env.PORT, process.env.IP);
 
 //static files
 app.use(express.static('public'));
