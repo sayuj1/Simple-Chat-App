@@ -7,13 +7,13 @@ const socket = require('socket.io');
     console.log("Server started at port 4000");
 });*/
 
-app.listen(process.env.PORT, process.env.IP);
+let server = app.listen(process.env.PORT, process.env.IP);
 
 //static files
 app.use(express.static('public'));
 
 //socket setup
-const io = socket(server);   //telling to use this server
+let io = socket(server);   //telling to use this server
 
 io.on('connection', function(socket){   //starting the connection
 console.log('made socket connection', socket.id);
