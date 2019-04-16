@@ -15,6 +15,7 @@ btn.addEventListener('click', function(){
         message: message.value,
         handle: handle.value
     });
+    message.value = '';
 });
 
 message.addEventListener('keypress', function(){  
